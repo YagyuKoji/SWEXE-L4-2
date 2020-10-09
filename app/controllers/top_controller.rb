@@ -10,10 +10,8 @@ class TopController < ApplicationController
     end
     
     def login
-        uid =  params[:uid]
-        pass =  params[:pass]
-        if  User.find_by(uid: uid, pass: pass)
-          session[:login_uid] = uid
+        if  user = User.find_by(uid: params[:uid], pass: params[:pass])
+          session[:login_uid] = params[:uid]
           redirect_to root_path
         else
           render :error
