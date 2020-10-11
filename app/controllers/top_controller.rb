@@ -2,7 +2,6 @@ class TopController < ApplicationController
     
     def main
         if session[:login_uid] != nil
-            session.delete(:login_uid)
             render :main
         else
             render :login
@@ -16,6 +15,12 @@ class TopController < ApplicationController
         else
           render :error
         end
+    end
+    
+    def delete
+        session.delete(:login_uid)
+        render :login
+        logger.debug("ログアウトされました")
     end
     
 end
