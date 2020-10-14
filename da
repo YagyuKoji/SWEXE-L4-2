@@ -1,0 +1,23 @@
+[33mcommit 64dc68d4385d63c85f6e89a85d00b5626a91446c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Koji Yagyu <1811140080p@ed.fuk.kindai.ac.jp>
+Date:   Sun Oct 11 15:11:16 2020 +0000
+
+    ログアウトボタンを追加
+
+[33mcommit d3fb2c723a7a39719f14d48cad40bdefea58a964[m
+Author: Koji Yagyu <1811140080p@ed.fuk.kindai.ac.jp>
+Date:   Fri Oct 9 01:49:33 2020 +0000
+
+    top_controllerを修正
+
+[33mcommit 1fc5af77464647a49c34b65ee626bb63db61cb28[m
+Author: Koji Yagyu <1811140080p@ed.fuk.kindai.ac.jp>
+Date:   Wed Oct 7 07:58:14 2020 +0000
+
+    GEMfileを編集
+
+[33mcommit bf04e2d5ac690276e776c111469259aea2ead03e[m
+Author: Koji Yagyu <1811140080p@ed.fuk.kindai.ac.jp>
+Date:   Wed Oct 7 07:54:59 2020 +0000
+
+    作成

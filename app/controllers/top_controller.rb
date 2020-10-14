@@ -9,7 +9,7 @@ class TopController < ApplicationController
     end
     
     def login
-        if  user = User.find_by(uid: params[:uid], pass: params[:pass])
+        if User.authenticate(params[:uid], params[:pass])
           session[:login_uid] = params[:uid]
           redirect_to root_path
         else
@@ -19,8 +19,10 @@ class TopController < ApplicationController
     
     def delete
         session.delete(:login_uid)
-        render :login
+        #render :login
+        redirect_to root_path
         logger.debug("ログアウトされました")
     end
     
 end
+#find_by(uid: params[:uid], pass: params[:pass])
