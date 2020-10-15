@@ -17,7 +17,7 @@ class TopController < ApplicationController
         end
     end
     
-    def delete
+    def logout
         session.delete(:login_uid)
         #render :login
         redirect_to root_path
@@ -25,4 +25,3 @@ class TopController < ApplicationController
     end
     
 end
-#find_by(uid: params[:uid], pass: params[:pass])
